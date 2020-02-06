@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SUM200_Project</string>
+    <string name="playGame">Play</string>
+    <string name="startGame">Start</string>
+    <string name="moveToBook">Spellbook</string>
+    <string name="returnToMenu">Return to Menu</string>
+</resources>

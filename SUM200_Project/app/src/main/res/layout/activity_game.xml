@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.230" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30"
+        android:textColor="#E91E63"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <TextView
+        android:id="@+id/multiplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <TextView
+        android:id="@+id/combo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/currentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.60"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.230" />
+
+    <ImageView
+        android:id="@+id/randomSpell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58" />
+
+    <TextView
+        android:id="@+id/randomCheatBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/randomSpell"
+        app:layout_constraintEnd_toEndOf="@+id/randomSpell"
+        app:layout_constraintStart_toStartOf="@+id/randomSpell"
+        app:layout_constraintTop_toTopOf="@+id/randomSpell" />
+
+    <ImageView
+        android:id="@+id/emptyOne"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/empty"
+        android:tag="test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/emptyTwo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <ImageView
+        android:id="@+id/emptyThree"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/cheatBoxOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/emptyOne"
+        app:layout_constraintEnd_toEndOf="@+id/emptyOne"
+        app:layout_constraintStart_toStartOf="@+id/emptyOne"
+        app:layout_constraintTop_toTopOf="@+id/emptyOne" />
+
+    <TextView
+        android:id="@+id/cheatBoxTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/emptyTwo"
+        app:layout_constraintEnd_toEndOf="@+id/emptyTwo"
+        app:layout_constraintStart_toStartOf="@+id/emptyTwo"
+        app:layout_constraintTop_toTopOf="@+id/emptyTwo"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/cheatBoxThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/emptyThree"
+        app:layout_constraintEnd_toEndOf="@+id/emptyThree"
+        app:layout_constraintStart_toStartOf="@+id/emptyThree"
+        app:layout_constraintTop_toTopOf="@+id/emptyThree"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <ImageButton
+        android:id="@+id/quasButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/quas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <ImageButton
+        android:id="@+id/wexButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/wex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <ImageButton
+        android:id="@+id/exortButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/exort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <ImageButton
+        android:id="@+id/spellOne"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.60"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <ImageButton
+        android:id="@+id/spellTwo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+    <TextView
+        android:id="@+id/cheatBoxFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/spellOne"
+        app:layout_constraintEnd_toEndOf="@+id/spellOne"
+        app:layout_constraintStart_toStartOf="@+id/spellOne"
+        app:layout_constraintTop_toTopOf="@+id/spellOne" />
+
+    <TextView
+        android:id="@+id/cheatBoxFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxx"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/spellTwo"
+        app:layout_constraintEnd_toEndOf="@+id/spellTwo"
+        app:layout_constraintStart_toStartOf="@+id/spellTwo"
+        app:layout_constraintTop_toTopOf="@+id/spellTwo" />
+
+    <ImageButton
+        android:id="@+id/invokeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/invoke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.950"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
